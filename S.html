@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume Generator</title>
+  <link rel="stylesheet" href="S.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h1>Create Your Resume</h1>
+  <form id="resumeForm">
+    <input type="text" id="fullName" placeholder="Full Name" required>
+    <input type="text" id="jobTitle" placeholder="Job Title" required>
+    <input type="text" id="phone" placeholder="Phone Number" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="linkedin" placeholder="LinkedIn URL">
+
+    <textarea id="skills" placeholder="Skills (comma separated)" required></textarea>
+    <textarea id="languages" placeholder="Languages (comma separated)" required></textarea>
+    <textarea id="objective" placeholder="Career Objective" required></textarea>
+    <textarea id="education" placeholder="Education Details" required></textarea>
+    <textarea id="experience" placeholder="Experience Details" required></textarea>
+
+    <button type="submit">Get Resume</button>
+  </form>
+</div>
+
+<div class="resume-container" id="resumeContainer" style="display:none;">
+  <div class="resume-header">
+    <h1 id="rFullName"></h1>
+    <h2 id="rJobTitle"></h2>
+  </div>
+
+  <div class="resume-content">
+    <div class="left-panel">
+      <h3>Contact</h3>
+      <p id="rPhone"></p>
+      <p id="rEmail"></p>
+      <p><a href="#" id="rLinkedin" target="_blank">LinkedIn</a></p>
+
+      <h3>Skills</h3>
+      <ul id="rSkills"></ul>
+
+      <h3>Languages</h3>
+      <ul id="rLanguages"></ul>
+    </div>
+
+    <div class="right-panel">
+      <h3>Career Objective</h3>
+      <p id="rObjective"></p>
+
+      <h3>Education</h3>
+      <p id="rEducation"></p>
+
+      <h3>Experience</h3>
+      <p id="rExperience"></p>
+    </div>
+  </div>
+
+  <div class="download-button">
+    <button id="downloadPDF">Download Resume as PDF</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="S.js"></script>
+
+</body>
+</html>

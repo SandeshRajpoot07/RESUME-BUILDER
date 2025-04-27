@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="n.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Resume Builder</h1>
+
+  <div class="form-section">
+    <input type="text" id="fullName" placeholder="Full Name">
+    <input type="text" id="location" placeholder="City, State Zip">
+    <input type="text" id="phone" placeholder="Phone Number">
+    <input type="email" id="email" placeholder="Email Address">
+    <input type="text" id="linkedin" placeholder="LinkedIn URL">
+
+    <textarea id="headline" placeholder="Professional Headline"></textarea>
+    <textarea id="summary" placeholder="Professional Summary"></textarea>
+    <textarea id="strengths" placeholder="Key Strengths (comma separated)"></textarea>
+    <textarea id="experience" placeholder="Professional Highlights / Experience"></textarea>
+
+    <button onclick="generateResume()">Generate Resume</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+  </div>
+
+  <div id="resume" class="resume-section"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="n.js"></script>
+
+</body>
+</html>

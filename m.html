@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mid-Level Management Resume Generator</title>
+  <link rel="stylesheet" href="m.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h1>Create Your Resume</h1>
+  <form id="resumeForm">
+    <input type="text" id="fullName" placeholder="Full Name" required>
+    <input type="text" id="jobTitle" placeholder="Job Title" required>
+    <textarea id="summary" placeholder="Summary/About You" required></textarea>
+
+    <input type="text" id="phone" placeholder="Phone Number" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="linkedin" placeholder="LinkedIn | Portfolio URL" required>
+    <input type="text" id="location" placeholder="Location" required>
+
+    <textarea id="skills" placeholder="Key Skills (comma separated)" required></textarea>
+
+    <button type="submit">Generate Resume</button>
+  </form>
+</div>
+
+<div id="resumeContainer" class="resume-container" style="display:none;">
+  <div class="left-section">
+    <div class="profile-circle" id="profileInitials">SJ</div>
+
+    <div class="contact-info">
+      <h3>CONTACT</h3>
+      <p id="rPhone"></p>
+      <p id="rEmail"></p>
+      <p id="rLinkedin"></p>
+      <p id="rLocation"></p>
+    </div>
+
+    <div class="skills-info">
+      <h3>KEY SKILLS</h3>
+      <ul id="rSkills"></ul>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <h1 id="rFullName"></h1>
+    <h3 id="rJobTitle"></h3>
+    <p id="rSummary"></p>
+  </div>
+
+  <div class="download-btn">
+    <button id="downloadPDF">Download PDF</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="m.js"></script>
+
+</body>
+</html>

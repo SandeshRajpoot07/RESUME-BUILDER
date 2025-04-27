@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="Resume.css" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+  <h1>Resume Builder</h1>
+
+  <form id="resumeForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" required />
+
+    <label for="education">Education Details:</label>
+    <textarea id="education" placeholder="Institute, Degree, Year" required></textarea>
+
+    <label for="skills">Skills (comma separated):</label>
+    <input type="text" id="skills" required />
+
+    <label for="work">Work Experience:</label>
+    <textarea id="work" placeholder="Company, Position, Duration"></textarea>
+
+    <label for="projects">Projects:</label>
+    <textarea id="projects" placeholder="Project title and details"></textarea>
+
+    <label for="description">Description:</label>
+    <textarea id="description"></textarea>
+
+    <button type="button" onclick="generateResume()">Generate Resume</button>
+  </form>
+
+  <div id="generatedResume"></div>
+ 
+
+
+ 
+  <button type="button" id="downloadBtn" style="display:none;" onclick="downloadPDF()">Download as PDF</button>
+
+  <script src="Resum.js"></script>
+
+  
+</body>
+</html>

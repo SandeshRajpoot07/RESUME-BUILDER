@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #45a049;
+  }
+  
+  .resume-section {
+    padding: 30px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .resume-content h1 {
+    color: #004080;
+    margin-bottom: 5px;
+  }
+  
+  .resume-content p {
+    margin: 4px 0;
+  }
+  
+  .headline {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .section-title {
+    background: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+  
+  .strengths-box {
+    border: 1px solid #4CAF50;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Create Your Resume</h1>
+
+  <form id="resumeForm">
+    <h2>Personal Information</h2>
+    <input type="text" id="name" placeholder="Full Name" required><br>
+    <input type="text" id="address" placeholder="Address" required><br>
+    <input type="text" id="phone" placeholder="Phone Number" required><br>
+    <input type="email" id="email" placeholder="Email Address" required><br>
+
+    <h2>Skills (comma separated)</h2>
+    <input type="text" id="skills" placeholder="e.g. Legal Research, Negotiation, Communication" required><br>
+
+    <h2>Experience</h2>
+    <textarea id="experience" placeholder="Describe your work experience..." required></textarea><br>
+
+    <h2>Education</h2>
+    <textarea id="education" placeholder="Education details..." required></textarea><br>
+
+    <button type="submit">Generate Resume</button>
+  </form>
+
+  <div id="resume" class="resume" style="margin-top: 30px; display:none;">
+    
+  </div>
+
+  <button id="downloadBtn" style="display:none; margin-top: 20px;">Download as PDF</button>
+</div>
+
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script> -->
+<script src="index.js"></script>
+
+</body>
+</html>
